@@ -3,14 +3,12 @@ import os
 import tkinter as tk
 from tkinter import ttk 
 from unittest.mock import patch, Mock
-from tkinter import TclError  # Import TclError to handle Tkinter-related errors
+from tkinter import TclError 
 from ShieldXpert_Main import Kilo_Antivirus, Settings, Scan, Home,Scan_Utility, Feedback
 from register_login.startup import AntivirusApp
 from register_login.register import Registrationroot
 from register_login.login import AntivirusApp
-# import unittest
-# from unittest.mock import patch
-from Antivirusmaster.OptionBox import OptionBox  # Replace 'your_module' with the actual name of your module
+from Antivirusmaster.OptionBox import OptionBox  
 
 
 class TestKiloAntivirus(unittest.TestCase):

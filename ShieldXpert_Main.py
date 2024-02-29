@@ -4,8 +4,6 @@
 # Version           : 1.0 Main Release 
 
 import mysql.connector
-     
-
 try:
     from datetime import date
     from tkinter import *

@@ -95,9 +95,3 @@ class FileEncryptor:
 # Example usage:
 file_encryptor = FileEncryptor()
 file_encryptor.encrypt()
-
-# Access the encrypted file path
-# print("Encrypted file saved at:", file_encryptor.encrypted_file_path)
-
-# Or perform decryption
-# file_encryptor.decrypt()

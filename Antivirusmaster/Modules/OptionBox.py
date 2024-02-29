@@ -1,6 +1,4 @@
 import tkinter
-
-
 class OptionBox(object):
 
     def __init__(self, msg, b1, b2, frame, t, entry):
@@ -48,8 +46,6 @@ class OptionBox(object):
         # the enter button will trigger the focused button's action
         btn_1.bind('<KeyPress-Return>', func=self.b1_action)
         btn_2.bind('<KeyPress-Return>', func=self.b2_action)
-        # roughly center the box on screen
-        # for accuracy see: https://stackoverflow.com/a/10018670/1217270
         root.update_idletasks()
         xp = (root.winfo_screenwidth() // 2) - (root.winfo_width() // 2)
         yp = (root.winfo_screenheight() // 2) - (root.winfo_height() // 2)
@@ -78,8 +74,6 @@ class OptionBox(object):
         self.returning = self.b2_return
         self.root.quit()
 
-    # remove this function and the call to protocol
-    # then the close button will act normally
     def close_mod(self):
         pass
 
@@ -109,6 +103,5 @@ def option_box(msg, b1='OK', b2='Cancel', frame=True, t=False, entry=False):
     """
     message_box = OptionBox(msg, b1, b2, frame, t, entry)
     message_box.root.mainloop()
-    # the function pauses here until the mainloop is quit
     message_box.root.destroy()
     return message_box.returning
